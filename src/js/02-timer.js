@@ -30,9 +30,7 @@ const options = {
 
     if (diff <= 0) {
       refs.startBtn.disabled = true;
-      return alert(
-        '!!! The target date must be bigger then the current date !!!'
-      );
+      return alert('Please choose a date in the future');
     }
     refs.startBtn.disabled = false;
   },
